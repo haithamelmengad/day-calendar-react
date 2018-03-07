@@ -1,5 +1,41 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 10;
   font-family: sans-serif;
+}
+
+  
+.event { 
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-left-color: green;
+  opacity: 0.5;
+  background-color: LightGray
+}
+
+.daybox {
+  /* padding-top: 20px;
+  width: 600px; */
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.time-line {
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.time-line::before {
+  display: block;
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
